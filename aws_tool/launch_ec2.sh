@@ -4,13 +4,14 @@
 
 #if $1 is empty or not supplied then I want to mark it as failure.
 
+COMPONENT=$1
+
 if [-z "$1"] ; then
     echo -e "\e[41;31m Machine name is missing.Please enter Machine name while running script! \e[0m"
     exit 1
 fi
 
 SGID=sg-08700d26faab1a69d
-COMPONENT=$1
 
 AMI_ID=$(aws ec2 describe-images  --filters "Name=name,Values=DevOps-LabImage-CentOS7"  | jq '.Images[].ImageId' | sed -e 's/"//g')
 
