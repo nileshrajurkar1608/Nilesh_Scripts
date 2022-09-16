@@ -29,8 +29,8 @@ create_server() {
 
 if ["$1" == "all"]; then
     for component in catalogue cart shipping mongodb payment rabbitmq redis mysql user frontend; do
-    #calling function
-    create_server
+        #calling function
+        create_server
     done
 else
     create_server
