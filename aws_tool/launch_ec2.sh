@@ -6,7 +6,7 @@
 
 COMPONENT=$1
 
-if [-z "$1"] ; then
+if [ -z "$1" ] ; then
     echo -e "\e[41;31m Machine name is missing.Please enter Machine name while running script! \e[0m"
     exit 1
 fi
@@ -27,7 +27,7 @@ create_server() {
 }
 
 
-if ["$1" == "all"]; then
+if [ "$1" == "all"]; then
     for component in catalogue cart shipping mongodb payment rabbitmq redis mysql user frontend; do
         #calling function
         create_server
