@@ -17,3 +17,7 @@ echo $b
 echo ${a}
 
 echo "${b}"
+
+
+d=150
+echo -e "value of d is $d:"
