@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<COMMENT
 echo -e "This is my first bash command"
 
 echo "Hi" ; echo hay  
@@ -17,7 +18,7 @@ echo $b
 echo ${a}
 
 echo "${b}"
-
+COMMENT
 
 d=150
 echo -e "value of d is:$d:"
