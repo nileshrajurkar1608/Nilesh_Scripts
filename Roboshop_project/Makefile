@@ -30,6 +30,3 @@ payment:
 
 dispatch:
 	bash components/dispatch.sh
-
-mysql:
-	bash components/mysql.sh
