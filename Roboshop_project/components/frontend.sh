@@ -6,13 +6,13 @@ echo -e "\e[44;32m I am installing frontend:\e[0m"
 
 source components/common.sh
 
-echo -e "\e[44;32m\n Installing Nginx:\e[0m"
+echo -n -e "\e[44;32m\n Installing Nginx:\e[0m"
 yum install nginx -y  &>>/tmp/frontend.log
 
 if [ $? -eq 0 ]; then 
-    echo -n -e "Success!"
+    echo -e "Success!"
 else
-    echo -n -e "Failure!"
+    echo -e "Failure!"
 fi
 
 systemctl enable nginx
