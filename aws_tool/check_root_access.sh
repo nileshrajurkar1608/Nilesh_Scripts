@@ -16,6 +16,7 @@ if [ $ID -eq 0 ]; then
     yum install httpd -y
 else
     echo -e "\e[41;32mtry running as sudo or root user\e[0m"
+    exit 1
 fi
 
 
