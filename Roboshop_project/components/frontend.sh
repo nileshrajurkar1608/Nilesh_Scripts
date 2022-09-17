@@ -21,7 +21,7 @@ curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend
 echo -e "\e[44;32m\n Deploy in Nginx Default Location:\e[0m"
 cd /usr/share/nginx/html
 rm -rf *
-unzip /tmp/frontend.zip  &>>/tmp/frontend.log
+unzip -o /tmp/frontend.zip  &>>/tmp/frontend.log
 
 mv frontend-main/* .
 mv static/* .
