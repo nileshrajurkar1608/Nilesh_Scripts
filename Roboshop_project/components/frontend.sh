@@ -28,9 +28,8 @@ mv static/* .
 rm -rf frontend-main README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
-#Restart nginx services:
-
-#systemctl start nginx
+echo -e "\e[44;32m\n Restart nginx services:\e[0m"
+systemctl start nginx
 
 
 
