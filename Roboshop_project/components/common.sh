@@ -8,9 +8,9 @@ fi
 
 status(){
     if [ $? -eq 0 ]; then 
-    echo -e "Success!"
+    echo -e "\e[32mSuccess!\e[0m"
 else
-    echo -e "Failure!"
+    echo -e "\e[31mFailure!\e[0m"
 fi
 }
 
