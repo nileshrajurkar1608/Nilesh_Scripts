@@ -47,3 +47,12 @@ echo -e "Print Process ID of script you are running is $$"
 
 read -p "Enter your name:" NAME
 echo -e "\nYour name is '$NAME'"
+
+# Function:
+UPTIME_COMMAND () {
+    echo -e "This is first function!"
+    echo -e "Printing uptime"
+    uptime
+}
+
+UPTIME_COMMAND
