@@ -2,7 +2,7 @@
 
 echo -e "\e[44;32mI am installing frontend!\e[0m"
 
-source componets/common.sh
+source components/common.sh
 
 echo -e "\e[44;32mInstalling Nginx!\e[0m"
 
