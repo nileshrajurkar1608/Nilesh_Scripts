@@ -21,5 +21,12 @@ if [ "$NAME" = "Nilesh" ]; then
 elif [ "$NAME" = "Manu" ]; then
     echo -e "Manu, You are a Teacher!"
 else 
-    echo -e "\e[46;32mYou are not a registered user![0m"
+    echo -e "\e[46;32mYou are not a registered user!\e[0m"
 fi
+
+ACTION=$1
+
+if [ -z "$ACTION" ]; then
+    echo -e "Only valid options are start or stop or restart"
+fi
+
