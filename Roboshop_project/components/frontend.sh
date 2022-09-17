@@ -8,7 +8,7 @@ source components/common.sh
 
 echo -n -e "\e[35m\n Installing Nginx:\e[0m"
 yum install nginxhhhh -y  >>/tmp/frontend.log
-status $?
+status
 
 systemctl enable nginx
 
