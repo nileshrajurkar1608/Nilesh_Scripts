@@ -7,7 +7,7 @@ echo -e "\e[44;35m I am installing frontend\e[0m:"
 source components/common.sh
 
 echo -n -e "\e[35m\n Installing Nginx:\e[0m"
-yum install nginxhhhh -y  &>>/tmp/frontend.log
+yum install nginx -y  &>>/tmp/frontend.log
 status $?
 
 systemctl enable nginx
