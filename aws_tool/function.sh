@@ -3,12 +3,12 @@
 # Function:
 UPTIME_COMMAND () {
     echo -e "\nThis is first function!"
-    echo -e "Printing uptime of Machine:\n"
+    echo -e "\e[46;32mPrinting uptime of Machine:\e[0m\n"
     uptime
 }
 
 LOAD_AVERAGE() {
-    echo -e -n "\nLoad Average of Machine is:"
+    echo -e -n "\n\e[46;32mLoad Average of Machine is:\e[0m"
     uptime| awk -F : '{print $NF}' 
 }
 
