@@ -8,7 +8,7 @@ UPTIME_COMMAND () {
 }
 
 LOAD_AVERAGE() {
-    echo -e "\nLoad Average of Machine is:"
+    echo -e -n "\nLoad Average of Machine is:"
     uptime| awk -F : '{print $NF}' 
 }
 
