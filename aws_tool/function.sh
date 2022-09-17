@@ -2,8 +2,8 @@
 
 # Function:
 UPTIME_COMMAND () {
-    echo -e "This is first function!"
-    echo -e "Printing uptime"
+    echo -e "\nThis is first function!"
+    echo -e "Printing uptime of Machine:\n"
     uptime
 }
 
