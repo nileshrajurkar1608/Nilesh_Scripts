@@ -8,15 +8,6 @@ source components/common.sh
 
 echo -n -e "\e[44;32m\n Installing Nginx:\e[0m"
 yum install nginx -y  &>>/tmp/frontend.log
-
-status(){
-    if [ $? -eq 0 ]; then 
-    echo -e "Success!"
-else
-    echo -e "Failure!"
-fi
-}
-
 status
 
 systemctl enable nginx
@@ -39,12 +30,10 @@ mv frontend-main/* .
 mv static/* .
 rm -rf frontend-main README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
-
 status
 
 echo -n -e "\e[32m\n Restart nginx services:\e[0m"
 systemctl restart nginx
-
 status
 
 

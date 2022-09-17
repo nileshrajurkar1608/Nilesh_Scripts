@@ -6,3 +6,11 @@ if [ "$ID" -ne 0 ]; then
     exit 1
 fi
 
+status(){
+    if [ $? -eq 0 ]; then 
+    echo -e "Success!"
+else
+    echo -e "Failure!"
+fi
+}
+
