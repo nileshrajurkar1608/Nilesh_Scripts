@@ -2,7 +2,7 @@
 
 # if-else condition
 
-# read -p "What is your Name:" NAME
+read -p "What is your Name:" NAME
 
 # if [ "$NAME" = "Nilesh" ]; then 
 #     echo -e "Welcome Nilesh!"
