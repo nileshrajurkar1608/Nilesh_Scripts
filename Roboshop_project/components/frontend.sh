@@ -2,11 +2,11 @@
 
 set -e      # To make sure script stops when any of instruction/command fails.
 
-echo -e "\e[32m I am installing frontend:\e[0m"
+echo -e "\e[44;32m I am installing frontend\e[0m:"
 
 source components/common.sh
 
-echo -n -e "\e[44;32m\n Installing Nginx:\e[0m"
+echo -n -e "\e[32m\n Installing Nginx:\e[0m"
 yum install nginx -y  &>>/tmp/frontend.log
 status
 
