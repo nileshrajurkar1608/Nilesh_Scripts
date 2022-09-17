@@ -2,3 +2,6 @@ alias aws_tool="cd /home/centos/Nilesh_Scripts/aws_tool; ls"
 alias gp="git pull"
 alias ls="ls -lrt"
 alias rc="source ~/.bashrc"
+
+alias manu_scripts="cd /Users/nileshrajurkar/Documents/aws_github/bash-scripting/roboshop; ls"
+alias aws_tool="cd /Users/nileshrajurkar/Documents/aws_github/Nilesh_Scripts/aws_tool; ls"
