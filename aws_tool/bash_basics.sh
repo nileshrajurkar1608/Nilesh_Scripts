@@ -20,4 +20,10 @@ echo "${b}"
 
 
 d=150
-echo -e "value of d is $d:"
+echo -e "value of d is:$d:"
+
+today_date=$(date +%F)
+
+echo -e "Good Morning! Today's date is $today_date"
+
+
