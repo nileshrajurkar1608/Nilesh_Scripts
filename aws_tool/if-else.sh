@@ -4,10 +4,10 @@
 
 read -p "What is your Name:" NAME
 
-if [ "$NAME" = "Nilesh" ]; then 
-    echo -e "Welcome Nilesh!"
-    exit 1
-fi
+# if [ "$NAME" = "Nilesh" ]; then 
+#     echo -e "Welcome Nilesh!"
+#     exit 1
+# fi
 
 if [ "$NAME" = "Manu" ]; then 
     echo -e "Welcome Manu!"
