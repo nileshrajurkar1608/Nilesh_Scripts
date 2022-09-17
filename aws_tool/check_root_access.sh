@@ -6,6 +6,6 @@ if [ "$ID" != "0" ]; then
     exit 1
 fi
 
-echo -e "Installing httpd"
+echo -e "\e[42;32mInstalling httpd\e[0m"
 yum install httpd -y
 
