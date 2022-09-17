@@ -30,7 +30,17 @@ echo -e "\e[46;31mGood Morning! Today's date is $DATE_COMMAND\e[0m"
 
 echo -e "Name of script you are running is $0"
 
-c=$2
-echo -e "value of c is '$2'"
+# c=$2
+# echo -e "value of c is '$2'"
 
+# command: sh bash_basics.sh Nilesh Kiran
+# here $1=Nilesh and $2=Kiran
 
+# Output:
+# Name of script you are running is bash_basics.sh
+# value of c is 'Kiran'
+
+echo -e "Print supplied variables are: $*"
+echo -e "Print supplied variables are: $@"
+echo -e "Print NUMBER of supplied variables are: $#"
+echo -e "Print Process ID of script you are running $$"
