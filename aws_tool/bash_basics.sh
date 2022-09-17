@@ -22,8 +22,10 @@ echo "${b}"
 d=150
 echo -e "value of d is:$d:"
 
-today_date=$(date +%F)
+DATE_COMMAND=$(date +%F)
 
-echo -e "Good Morning! Today's date is $today_date"
+echo -e "Good Morning! Today's date is $DATE_COMMAND"
+
+echo -e "\e[46;31mGood Morning! Today's date is $DATE_COMMAND\e[0m"
 
 
