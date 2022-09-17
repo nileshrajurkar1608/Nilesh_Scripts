@@ -2,11 +2,7 @@
 
 echo -e "\e[44;32mI am installing frontend!\e[0m"
 
-ID=$(id -u)
-if [ "$ID" -ne 0 ]; then
-    echo -e "\e[41;32mTry to run using sudo or root user!\e[0m"
-    exit 1
-fi
+source componets/common.sh
 
 echo -e "\e[44;32mInstalling Nginx!\e[0m"
 
