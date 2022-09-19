@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# validating whether the executing user is root or not
+ID=$(id -u)
+if [ $ID -ne 0 ]; then 
+    echo -e "\e[31m Try executing the script with sudo user by entering 'sudo -i' and a password.\n \e[0m"
+    exit 1
+fi 
+
 echo -n -e "\e[32mEnter recording ID:\e[0m "
 read R_ID
 
