@@ -17,20 +17,20 @@ read TSM
 
 TSM_IP=$TSM
 
-echo -n -e "\e[32mEnter MCR URL or IP Address (without port number 80):\e[0m "
+echo -n -e "\e[32mEnter MCR URL or IP Address\e[0m (\e[31mwithout http:// and 80\e[0m): "
 read MCR
 
 MCR_URL=$MCR
 
-echo -e "\e[46;32m\nRaw data download URL:\e[0m/opt/ringcentral/rmp/tsm_get.js '${REC_ID}' -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool ${MCR_URL}:80\n"
+echo -e "\e[46;32m\nJust for Info: Raw data download URL will run automatically:\e[0m/opt/ringcentral/rmp/tsm_get.js '${REC_ID}' -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool http://${MCR_URL}:80\e[0m\n"
 
-/opt/ringcentral/rmp/tsm_get.js ${REC_ID} -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool ${MCR_URL}
+/opt/ringcentral/rmp/tsm_get.js ${REC_ID} -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool http://${MCR_URL}:80
 
 echo -n -e "\n\e[32mNumber of downloaded files are: \e[0m"; ls -lrth -R ${REC_ID}_media | wc -l
 
-echo -e "\e[46;32m\nRun below command to 'Transcode raw data' (if download of raw data files succeeded).\n\e[0m"
+echo -e "\e[45m\nCopy below command and Run manually to 'Transcode raw data' (if download of raw data files succeeded).\e[0m\n"
 
-echo -e "nohup /opt/ringcentral/rmp/bin/tcr -o /mnt/data/${REC_ID}_media.mp4 \"/mnt/data/${REC_ID}_media/${REC_ID}/\" &"
+echo -e "nohup /opt/ringcentral/rmp/bin/tcr -o /mnt/data/${REC_ID}_media.mp4 \"/mnt/data/${REC_ID}_media/${REC_ID}/\" &\n"
 
 
 
