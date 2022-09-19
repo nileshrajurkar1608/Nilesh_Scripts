@@ -38,13 +38,13 @@ echo -n -e "\n\e[32mEnter your prod server username Ex. nilesh.rajurkar: \e[0m"
 read username
 USER_NAME=$username
 
-echo -e "\e[32m\nRun below command to change ownership of recovered mp4 file:\e[0m\n"
+echo -e "\e[35m\nRun below command to change ownership of recovered mp4 file:\e[0m\n"
 
 echo -e "chown ${USER_NAME}:unixusers ${REC_ID}_media.mp4"
 
-echo -e "\e[32m\nRun below command on local PC to download recovered mp4 from server:\e[0m\n"
+echo -e "\e[35m\nRun below command on local PC to download recovered mp4 from server:\e[0m\n"
 
-echo -e "\e[32m\nscp ${USER_NAME}@10.9.130.81:/mnt/data/${REC_ID}_media.mp4 .\e[0m\n"
+echo -e "\e[32mscp ${USER_NAME}@10.9.130.81:/mnt/data/${REC_ID}_media.mp4 .\e[0m\n"
 
 
 
