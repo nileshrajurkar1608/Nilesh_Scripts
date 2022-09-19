@@ -28,7 +28,7 @@ echo -e "\e[46;32m\nRaw data download URL:\e[0m/opt/ringcentral/rmp/tsm_get.js '
 
 echo -n -e "\n\e[32mNumber of downloaded files are: \e[0m"; ls -lrth -R ${REC_ID}_media | wc -l
 
-echo -e "\e[46;32m\nRun below command to 'Transcode raw data' if download of file succeeds.\n\e[0m"
+echo -e "\e[46;32m\nRun below command to 'Transcode raw data' (if download of raw data files succeeded).\n\e[0m"
 
 echo -e "nohup /opt/ringcentral/rmp/bin/tcr -o /mnt/data/${REC_ID}_media.mp4 \"/mnt/data/${REC_ID}_media/${REC_ID}/\" &"
 
