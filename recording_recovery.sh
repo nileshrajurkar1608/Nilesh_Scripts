@@ -15,7 +15,7 @@ read MCR
 
 MCR_URL=$MCR
 
-DOWNLOAD_URL=$(/opt/ringcentral/rmp/tsm_get.js \'${REC_ID}\' -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool ${MCR_URL})
+DOWNLOAD_URL=$(\/opt\/ringcentral\/rmp\/tsm_get.js \'${REC_ID}\' -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool ${MCR_URL})
 
 echo -e "\e[32mRaw files lownload URL is $DOWNLOAD_URL \e[0m"
 
