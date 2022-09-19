@@ -15,11 +15,11 @@ read MCR
 
 MCR_URL=$MCR
 
-DOWNLOAD_URL=$(/opt/ringcentral/rmp/tsm_get.js '$REC_ID' -d $REC_ID_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool $MCR_URL)
+echo -e "/opt/ringcentral/rmp/tsm_get.js '${REC_ID}' -d ${REC_ID}_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool ${MCR_URL}"
 
-echo -e "$DOWNLOAD_URL"
+#echo -e "$DOWNLOAD_URL"
 
-/opt/ringcentral/rmp/tsm_get.js '$REC_ID' -d $REC_ID_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool $MCR_URL
+#/opt/ringcentral/rmp/tsm_get.js '$REC_ID' -d $REC_ID_media --tsm-host $TSM_IP --tsm-port 8080 --mcr-pool $MCR_URL
 
 
 
