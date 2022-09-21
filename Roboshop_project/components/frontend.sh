@@ -13,6 +13,7 @@ status $?
 systemctl enable nginx
 
 echo -n -e "\e[35m\n Starting Nginx:\e[0m"
+git
 systemctl start nginx 
 status $?
 
